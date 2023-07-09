@@ -1,5 +1,7 @@
 https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
   out=Stable-diffusion/v1-5-pruned-emaonly.ckpt
+https://huggingface.co/Berwin/txt2img/resolve/main/dreamshaper_7.safetensors
+  out=Stable-diffusion/dreamshaper_7.safetensors
 https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
   out=VAE/vae-ft-mse-840000-ema-pruned.ckpt
 https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
