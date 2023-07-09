@@ -50,6 +50,10 @@ RUN --mount=type=cache,target=/root/.cache/pip  \
   --mount=type=bind,from=xformers,source=/wheel.whl,target=/xformers-0.0.21.dev544-cp310-cp310-manylinux2014_x86_64.whl \
   pip install /xformers-0.0.21.dev544-cp310-cp310-manylinux2014_x86_64.whl
 
+RUN apt-get -y install parallel aria2 && apt-get clean
+COPY . /docker
+RUN chmod +x /docker/download.sh && /docker/download.sh
+
 ENV ROOT=/stable-diffusion-webui
 
 
